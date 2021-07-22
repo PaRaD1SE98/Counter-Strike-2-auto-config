@@ -51,6 +51,8 @@ after exec the autoexec, type usage anytime to check the bindings.
 exec prac in a local server, will find it useful.
 
 ### 8. Some Magics
+In game (mic/system) volume adjustment, see [Key Bindings](#6-key-bindings)
+
 Increasing volume when walking
 
 Zoom Radar when walking
