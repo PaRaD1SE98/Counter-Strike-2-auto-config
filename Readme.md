@@ -42,6 +42,7 @@ other optimizations...
 
 ### 5. Voice Settings
 open voice_positional
+
 set default voice_scale to 0.4
 
 ### 6. Key Bindings
