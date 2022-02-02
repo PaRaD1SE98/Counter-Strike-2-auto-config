@@ -44,19 +44,19 @@ Function Do-Copy()
         $fname = $cfgFilenames[$i]
         Copy-Item "$wdp\$fname" -Destination "$steamFolder\steamapps\common\Counter-Strike Global Offensive\csgo\cfg"
     }
-    Copy-Item "$wdp\$videoSettingsName" -Destination "$accountsInfo\730\local\cfg"
+    Copy-Item "$wdp\$videoSettingsName" -Destination "$accountFolder\730\local\cfg"
     Write-Host "Done!"
 }
 
 $steamFolder = Get-Folder "Select your Steam install folder:"
-$accountsInfo = Check-Multiple-Account
+$accountFolder = Check-Multiple-Account
 Write-Host "Summary:"
 Write-Host "Your cfg will be move to: '$steamFolder\steamapps\common\Counter-Strike Global Offensive\csgo\cfg'"
-Write-Host "Your video settings will be move to: '$accountsInfo\730\local\cfg'"
+Write-Host "Your video settings will be move to: '$accountFolder\730\local\cfg'"
 $uinput = Read-Host "Correct?[Y/n]"
 if ($uinput -match "y")
 {
     Do-Copy
     $notify = New-Object -ComObject WScript.Shell
-    $window = $notify.popup("Your cfg(s) has been moved to: '$steamFolder\steamapps\common\Counter-Strike Global Offensive\csgo\cfg'.`r`Your video settings has been moved to: '$accountsInfo\730\local\cfg'", 0, "Notification", 0 + 64)
+    $window = $notify.popup("Your cfg(s) has been moved to: '$steamFolder\steamapps\common\Counter-Strike Global Offensive\csgo\cfg'.`r`Your video settings has been moved to: '$accountFolder\730\local\cfg'", 0, "Notification", 0 + 64)
 }
