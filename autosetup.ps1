@@ -54,7 +54,7 @@ Write-Host "Summary:"
 Write-Host "Your cfg will be move to: '$steamFolder\steamapps\common\Counter-Strike Global Offensive\csgo\cfg'"
 Write-Host "Your video settings will be move to: '$accountFolder\730\local\cfg'"
 $uinput = Read-Host "Correct?[Y/n]"
-if ($uinput -match "y")
+if ($uinput -match "y" -or $uinput -match "")
 {
     Do-Copy
     $notify = New-Object -ComObject WScript.Shell
