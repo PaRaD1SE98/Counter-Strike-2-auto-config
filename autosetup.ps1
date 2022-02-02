@@ -24,7 +24,7 @@ Function Check-Multiple-Account()
     if ($count -gt 1)
     {
         Write-Host "You have $count Steam accounts in this computer"
-        $correctAccountFolder = Get-Folder "You have $count Steam accounts in this computer.`r`Select your account number inside \userdata:" "$steamFolder\userdata"
+        $correctAccountFolder = Get-Folder "You have $count Steam accounts in this computer.`r`Select your account number inside 'userdata' folder:" "$steamFolder\userdata"
         return $correctAccountFolder
     }
     else
@@ -48,7 +48,7 @@ Function Do-Copy()
     Write-Host "Done!"
 }
 
-$steamFolder = Get-Folder "Select your Steam install folder:"
+$steamFolder = Get-Folder "Select your Steam install folder (usually named 'Steam' inside 'ProgramFiles(x86)'):"
 $accountFolder = Check-Multiple-Account
 Write-Host "Summary:"
 Write-Host "Your cfg will be move to: '$steamFolder\steamapps\common\Counter-Strike Global Offensive\csgo\cfg'"
