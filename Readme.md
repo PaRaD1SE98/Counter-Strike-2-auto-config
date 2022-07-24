@@ -1,8 +1,9 @@
 My CS:GO Configuration
 ===
+### You can use the `autosetup.ps1` powershell script to help you quickly setting up your gaming environment. However, you can always do it by yourself.
+
 Location
 ---
-### You can use the `autosetup.ps1` powershell script to help you quickly setting up your gaming environment. However, you can always do it by yourself.
 
 ### 1. Move ```autoexec.cfg```,```prac.cfg```,```usage.cfg``` to 
 \Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg
@@ -12,7 +13,7 @@ Location
 where ```xxxxxxxxx``` is your account number, if you have multiple 
 accounts used in the same computer, make sure to choose the right 
 one. If you have a file with same filename in the directory, 
-override the existing file.
+this script will override the existing file.
 
 Features
 ---
