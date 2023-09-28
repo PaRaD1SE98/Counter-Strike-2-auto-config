@@ -6,7 +6,7 @@ Location
 ---
 
 ### 1. Move ```autoexec.cfg```,```prac.cfg```,```usage.cfg``` to 
-\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg
+\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg
 ### 2. Move ```video.txt``` to
 \Steam\userdata\xxxxxxxxx\730\local\cfg
 
