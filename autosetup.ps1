@@ -42,7 +42,7 @@ Function Do-Copy()
     for($i = 0; $i -lt $cfgFilenames.Length; $i++)
     {
         $fname = $cfgFilenames[$i]
-        Copy-Item "$wdp\$fname" -Destination "$steamFolder\steamapps\common\Counter-Strike Global Offensive\csgo\cfg"
+        Copy-Item "$wdp\$fname" -Destination "$steamFolder\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg"
     }
     Copy-Item "$wdp\$videoSettingsName" -Destination "$accountFolder\730\local\cfg"
     Write-Host "Done!"
@@ -51,7 +51,7 @@ Function Do-Copy()
 $steamFolder = Get-Folder "Select your Steam install folder (usually named 'Steam' inside 'ProgramFiles(x86)'):"
 $accountFolder = Check-Multiple-Account
 Write-Host "Summary:"
-Write-Host "Your cfg will be move to: '$steamFolder\steamapps\common\Counter-Strike Global Offensive\csgo\cfg'"
+Write-Host "Your cfg will be move to: '$steamFolder\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg'"
 Write-Host "Your video settings will be move to: '$accountFolder\730\local\cfg'"
 $uinput = Read-Host "Correct?[Y/n]"
 if ($uinput -match "y" -or $uinput -match "")
