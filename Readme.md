@@ -63,6 +63,8 @@ Zoom Radar when walking
 
 Decrease volume when shooting
 
+auto stop like valorant
+
 #### Fast flashbang switching:
 you can switch to another flashbang immediately after throwing one
 
